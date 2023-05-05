@@ -1,0 +1,124 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121; 
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --negro: #000000;
+    --gris-claro: #cccccc;
+}
+
+html {
+    font-size: 62.5%;
+}
+body{/* Estos 2 codigos (html y body) permiten reniciar el html y que 1rem sea igual a 10px */
+    font-size: 16px; 
+    /* background: var(--gris-claro); */
+    background-image: linear-gradient(to bottom, #ccc 0%, #666 50%, #000 100%);
+
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 4rem;
+}
+.contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 2rem;
+    border: #000000;
+}
+.contenedor_input {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: #ffc107;
+    width: 40rem;
+    height: 50rem;
+    border: 0.2rem solid #000000;
+    box-shadow: 15px 11px 14px 3px rgba(0,0,0,0.75);
+}
+.input {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    background: var(--primario);
+    border: none;
+    resize: none;
+}
+
+.contenedor_textarea {
+    display: grid;
+    place-items: center;
+    background: #ffc107;
+    width: 40rem;
+    height: 50rem;
+    border: 0.2rem solid #000000;
+    box-shadow: 15px 11px 14px 3px rgba(0,0,0,0.75);
+}
+.contenedor_textarea textarea {
+    background: var(--primario);
+    border: none;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    resize: none;
+}
+.contenedor_textarea img {
+    width: 20rem;
+    margin-left: 5.5rem;
+}
+.contenedor_textarea button {
+    margin-bottom: 2rem;
+}
+.boton-copiar {
+    width: 20rem;
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    background: var(--negro);
+    color: var(--primario);
+    border: none;
+    border-radius: 25px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.boton-copiar:hover {
+    background: var(--primario);
+    color: var(--negro);
+    transform: scale(1.1);
+    border: 5px solid;
+}
+
+.contenedor-botones {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+.botones {
+    width: 30rem;
+    padding: 1.5rem 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: var(--negro);
+    color: var(--primario);
+    border: none;
+    border-radius: 25px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.botones:hover {
+    background: var(--primario);
+    color: var(--negro);
+    transform: scale(1.1);
+    border: 5px solid;
+}
+
+.footer {
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--blanco);
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/style2.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo.svg" alt="">
+        <h1>Encriptador de texto</h1>
+    </header>
+
+    <main>
+        <form action="">
+            <div class="contenedor">
+                <div class="contenedor_input">
+                    <label for="mensaje"></label>
+                    <textarea class="input" type="text" cols="50" rows="2.5" id="mensaje" placeholder="Ingrese su texto aqui..."></textarea>
+                </div>
+                
+                <div class="contenedor_textarea" >
+                    <textarea id="resultado" cols="50" rows="2.5"></textarea>
+                    <div id="prueba1">
+                        <img src="imagenes/detective1.svg" alt="">
+                        <h2>Ningún mensaje fue encontrado</h2>
+                        <p>Ingresa el texto que desees encriptar o desencripta</p>
+                    </div>
+                    <button class="boton-copiar" id="btn-copiar" onclick="copiarTexto()">Copiar</button>
+                </div>
+
+            </div>
+            <div class="contenedor-botones">
+                <div>
+                    <button class="botones" type="button" onclick="encriptar(), displayOn()" >Encriptar</button>
+                </div>
+                <div>
+                    <button class="botones" type="button" onclick="desencriptar()">Desencriptar</button>
+                </div> 
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>Creado por Mariana Español</p>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
